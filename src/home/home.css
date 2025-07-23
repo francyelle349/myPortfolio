@@ -1,0 +1,263 @@
+
+.home{
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 5% 10%;
+    height: 40%;
+    width: 50%;
+    border-radius: 15px;
+    align-items: center;
+    justify-content:space-between;
+    display: flex;
+    animation: fadeInPage 0.9s ease-in-out;
+    scroll-behavior: smooth;
+    
+    
+}
+
+@keyframes fadeInPage {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.hire-block{
+  padding: 1%;
+}
+
+.glass-button{
+ 
+  background: rgba(239, 120, 255, 0.185);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(227, 168, 255, 0.918);
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  position:relative;
+  overflow: hidden;
+  width: auto;
+  display: inline-block;
+  margin: 0;
+   
+}
+.glass-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgb(218, 123, 255), transparent);
+  transition: left 0.7s;
+}
+
+.glass-button:hover {
+  background: rgba(239, 120, 255, 0.185);
+  border-color: rgba(255, 255, 255, 0.815);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.glass-button:hover::before {
+  left: 100%;
+}
+
+.glass-button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+#title{
+
+  padding-bottom: 10% ;
+  font-size: 20px;
+  color: #c3c4c3;
+}
+
+#description{
+   color: #c3c4c3;
+}
+p{
+   font-size: 15px;
+   color: #c3c4c3;
+}
+
+
+h1{
+  font-size: 25px;
+  overflow-y: hidden;
+}
+
+.copy-btn {
+  
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.copy-icon {
+    fill: white;
+}
+.buttons{
+  gap: 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5%;
+ 
+
+}
+  .status-indicator {
+            display: flex;
+            align-items: center;
+           
+            padding: 5% 10%;
+            height: 10%;
+           
+             
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #54eb40;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: pulse 2s infinite;
+            
+        }
+
+        .status-text {
+            color: #ffffff;
+            font-size: 10px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            
+          
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(46, 177, 64, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 68, 68, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 68, 68, 0);
+            }
+        }
+
+
+
+@media (max-width: 500px) { /* Styles for small devices (phones) */
+.home{
+    width:100%;
+    padding: 20% 10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+p{
+  font-size: 15px;
+}
+h1{
+  font-size: 20px;
+ 
+}
+
+.text-copy{
+  font-size: 11px;
+  
+}
+.copy-btn{
+ display: flex;
+width: 100%;
+height: 100%;
+overflow-y: hidden;
+
+
+
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+ 
+ 
+
+  
+
+
+
+}
+
+.hire-block{
+  padding: 1%;
+
+}
+
+ .status-indicator {
+    display: flex;
+    align-items: center;
+           
+   width: 100%;
+    height: 100%;
+    
+
+  
+           
+ }
+
+
+
+
+}
+
+@media (min-width: 768px) { /* Styles for medium devices (tablets) */
+  .home{
+    height: 300px;
+    width: 600px;
+  }
+
+}
+
+@media (min-width: 992px) { /* Styles for large devices (desktops) */
+  .home{
+    height: 400px;
+    width: 800px;
+  }
+
+}
