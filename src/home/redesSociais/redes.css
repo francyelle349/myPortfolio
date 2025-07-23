@@ -16,9 +16,7 @@
 }
 
 
-img{
-  width: 200px;
-}
+
 
 .socialMedia{
     display: flex;
@@ -31,6 +29,17 @@ img{
     
 
 }
+.subItemTitleSocial{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.subItemTitleSocial h3{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
 #git{
   font-size: 2rem;
   padding-left: 20px;
@@ -38,16 +47,17 @@ img{
 
 #link{
   font-size: 2rem;
-}
-.img1{
-    padding-left: 20px;
-     display: block;
-      
-      
-      
-}
+}   
+
 
 .images{
-    margin: 100px;
+  padding: 50px;
+}
+
+.images img{
+  
+    height: 150px;
+    width: 200px;
+    display: flex;
 }
 
