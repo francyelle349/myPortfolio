@@ -21,7 +21,7 @@ return (
         </div>
 
         <div className="buttons">
-          <a href="https://drive.google.com/file/d/1Id63OZ5VuLrzrBZxyYS6fETnnA1pmreE/view"className='hire-block'>
+          <a href="https://drive.google.com/file/d/1la_PVTz7-eYn-bm9VySCay_7utzkh_jm/view?usp=sharing"className='hire-block'>
             <p className="glass-button">Hire me | +</p>
           </a>
 
