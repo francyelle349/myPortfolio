@@ -126,7 +126,7 @@ function Abillities() {
 
                               <div className="subItems">
                              <p className="tech">.Net</p>
-                             <p className="tech">Tailwind CSS</p>
+                            
                              </div>
                              <p></p>
                             </div>
@@ -160,7 +160,7 @@ function Abillities() {
 
                                 </div>
                                 <div className="subItems">
-                                <p className="tech">Kubernetes</p>
+                               
                                 <p className="tech">Google Cloud</p>
                                  <p className="tech">GitHub</p>
 
